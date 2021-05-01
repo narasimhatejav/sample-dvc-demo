@@ -1,3 +1,7 @@
+#local package
+-e .
+
+#throd party
 dvc
 dvc[gdrive]
 scikit-learn
