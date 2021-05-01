@@ -1,7 +1,7 @@
 #local package
 -e .
 
-#throd party
+#thrid party
 dvc
 dvc[gdrive]
 scikit-learn
