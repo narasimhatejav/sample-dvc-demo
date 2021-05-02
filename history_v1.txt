@@ -49,5 +49,5 @@ cls
 doskey /HISTORY > history_v1.txt
 
 
-
-mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
+git add . && git commit -m "mlflow final" && git push origin main_mlflow
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 127.0.0.1 -p 1234
