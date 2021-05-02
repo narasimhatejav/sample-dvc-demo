@@ -47,3 +47,7 @@ git add . && git commit -m "setup done and added wheel"
 git push origin main
 cls
 doskey /HISTORY > history_v1.txt
+
+
+
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
