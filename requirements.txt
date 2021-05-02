@@ -1,11 +1,13 @@
-#local package
+# local package install
 -e .
 
-#thrid party
+# third party packages
 dvc
 dvc[gdrive]
-scikit-learn
+sklearn
 pandas
 pytest
 tox
-wheel
+flake8
+flask
+gunicorn

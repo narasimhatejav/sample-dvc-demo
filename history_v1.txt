@@ -1,0 +1,49 @@
+git add . && git commit -m "stage 1 complete"
+git push origin main
+python split_data.py
+python src\split_data.py
+dvc repro
+git add . && git commit -m "stage 2 complete"
+git push origin main
+python src\train_and_evaluate.py
+dvc repro
+git add . && git commit -m "stage 3 complete"
+git push origin main
+dvc repro
+mkdir report
+dvc params diff
+dvc metrics show
+dvc params show
+dvc params diff
+dvc metrics diff
+dvc metrics show
+dvc metrics diff
+dvc repro
+dvc metrics diff
+dvc params diff
+git add . && git commit -m "Changed tracker"
+git push origin main
+pip install -r requirements.txt
+git add . && git commit -m "pytox and tox"
+pytest -v
+tox
+pip install -e
+pip install -e .
+pip freeze
+history
+doskey
+doskey /HISTORY
+python setup.py sdist bdist_wheel
+pip install -r requirements.txx
+pip install -r requirements.txt
+python setup.py sdist bdist_wheel
+git add . && git commit -m "setup done"
+pip instll -e .
+pip install -e .
+python setup.py sdist bdist_wheel
+git add . && git commit -m "setup done and added wheel"
+git add . && git commit -m "setup done and added wheel" && git push origin main
+git add . && git commit -m "setup done and added wheel"
+git push origin main
+cls
+doskey /HISTORY > history_v1.txt
